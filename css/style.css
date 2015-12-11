@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.wrapper {
+	background-image: url('../img/waves.png');
+	-webkit-animation: fadeIn 1s .5s 1 both;
+	-moz-animation:    fadeIn 1s .5s 1 both;
+	animation:         fadeIn 1s .5s 1 both;
+	top: 0; right: 0; bottom: 0; left: 0;
+	text-rendering: optimizeLegibility;
+	text-transform: uppercase;
+	text-align: center;
+	position: fixed;
+	color: #fff;
+}
+.wrapper:before {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	content: '';
+}
+.wrapper:after {
+	border: 5px solid rgba(255,255,255,.2);
+	top: 0; left: 0; right: 0; bottom: 0;
+	position: fixed;
+	content: '';
+}
+.wrapper-inner {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	max-width: 80%;
+	z-index: 2;
+}
+.triangle-pattern {
+	background-image: url('../img/triangles.png');
+	bottom: 0; right: 0; left: 0; top: 0;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	opacity: .2;
+}
+.name {
+	font-family: "Playfair Display";
+	letter-spacing: 0.15em;
+	margin-bottom: 15px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 1;
+}
+.byline, .listen, .twitter {
+	font-family: "Source Sans Pro";
+	line-height: 1.6;
+	font-weight: 300;
+	font-size: 14px;
+}
+.twitter {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.divider {
+	border-color: rgba(255,255,255,.3);
+	border-bottom-width: 1px;
+	margin: 35px auto;
+	width: 80px;
+}
+a, a:visited {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition:    all .2s ease-in-out;
+	-o-transition:      all .2s ease-in-out;
+	transition:         all .2s ease-in-out;
+	border-bottom: 1px dotted transparent;
+	text-decoration: none;
+	color: #fff;
+}
+a.icon { border: none; }
+.listen { margin-bottom: 15px; }
+.byline { letter-spacing: 0.3em; }
+.listen, .twitter { letter-spacing: 0.15em; }
+a:hover, a:focus { border-color: rgba(255,255,255,.5); }
+::-moz-selection {
+	background-color: rgba(51,51,51,0.5);
+	color: #fff;
+}
+::selection {
+	background-color: rgba(51,51,51,0.5);
+	color: #fff;
+}
+@media (max-width: 800px) {
+	.name { font-size: 55px; }
+}
+@media (max-width: 400px) {
+	.name { font-size: 34px; }
+	.twitter { max-width: 80%; }
+	.divider { margin-top: 45px; }
+	.byline, .listen, .twitter { font-size: 12px; }
+}
+@-webkit-keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
