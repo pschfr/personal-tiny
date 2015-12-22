@@ -11,32 +11,12 @@
 	position: fixed;
 	color: #fff;
 }
-.wrapper:before {
-	vertical-align: middle;
-	display: inline-block;
-	height: 100%;
-	content: '';
-}
-.wrapper:after {
-	border: 5px solid rgba(255,255,255,.2);
-	top: 0; left: 0; right: 0; bottom: 0;
-	position: fixed;
-	content: '';
-}
-.wrapper-inner {
+.inner {
 	vertical-align: middle;
 	display: inline-block;
 	position: relative;
 	max-width: 80%;
 	z-index: 2;
-}
-.triangle-pattern {
-	background-image: url('../img/triangles.png');
-	bottom: 0; right: 0; left: 0; top: 0;
-	background-position: center;
-	background-size: cover;
-	position: fixed;
-	opacity: .2;
 }
 .name {
 	font-family: "Playfair Display";
@@ -85,9 +65,7 @@ a:hover, a:focus { border-color: rgba(255,255,255,.5); }
 	background-color: rgba(51,51,51,0.5);
 	color: #fff;
 }
-@media (max-width: 800px) {
-	.name { font-size: 55px; }
-}
+@media (max-width: 800px) { .name { font-size: 55px; } }
 @media (max-width: 400px) {
 	.name { font-size: 34px; }
 	.twitter { max-width: 80%; }
